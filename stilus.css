@@ -37,6 +37,7 @@ header{
 nav{
     grid-area: n;
 }
+
 article{
     grid-area: ar;
     display: grid;
@@ -45,7 +46,6 @@ article{
 
 aside{
     grid-area: as;
-
 }
 
 img{
@@ -80,4 +80,21 @@ main{
     "n n n"
     "ar ar as"
     "f f f";
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        grid-template-areas:
+        "h"
+        "n"
+        "ar"
+        "as"
+        "f";
+    }
+    article{
+        grid-template-columns: 1fr;
+    }
+    nav{
+        grid-template-columns: 1fr;
+    }
 }
