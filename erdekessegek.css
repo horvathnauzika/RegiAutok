@@ -45,7 +45,7 @@ header{
     grid-area: h;
 }
 
-nav{
+.menu{
     grid-area: n;
 }
 
@@ -80,7 +80,7 @@ main{
         "as"
         "f";
     }
-    nav{
+    .menu ul{
         grid-template-columns: 1fr;
     }
 }
